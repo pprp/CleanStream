@@ -28,7 +28,7 @@ def process_jsonl_file(filename, filters):
     return filtered_records
 
 # Specify the filenames
-jsonl_filename = 'top_100.jsonl'
+jsonl_filename = './data/top_100.jsonl'
 config_filename = 'c4.yaml'
 
 # Load the configuration

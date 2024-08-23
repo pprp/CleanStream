@@ -34,8 +34,8 @@ from typing import Dict, List, Callable
 import kenlm
 import sentencepiece
 
-from core.constants import CONTENT
-from core.factory_utils import factory_function
+from mappers.constants import CONTENT
+from mappers.factory_utils import factory_function
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 MODEL_SUBDIRECTORY = "mappers/enrichers/quality_prediction_enrichment_models"

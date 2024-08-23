@@ -10,9 +10,9 @@ from typing import List, Dict, Callable, Union
 
 from langdetect import detect_langs as detect_langdetect
 
-from core.constants import CONTENT
+from mappers.constants import CONTENT
 from mappers.core_utils import split_sentences
-from core.factory_utils import factory_function
+from mappers.factory_utils import factory_function
 
 FASTTEXT = 'fasttext'
 LANGDETECT = 'langdetect'

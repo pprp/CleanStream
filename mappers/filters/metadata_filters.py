@@ -5,7 +5,7 @@ from retrie.retrie import Blacklist
 import pickle
 import random
 
-from core.factory_utils import factory_function
+from mappers.factory_utils import factory_function
 from mappers.constants import *
 
 

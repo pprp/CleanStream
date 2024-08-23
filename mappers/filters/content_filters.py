@@ -3,8 +3,8 @@ from typing import List, Dict, Union, Optional
 import re
 
 from mappers.core_utils import split_paragraphs, split_sentences, split_words
-from core.factory_utils import factory_function
-from core.constants import CONTENT
+from mappers.factory_utils import factory_function
+from mappers.constants import CONTENT
 
 from typing import Union, Dict, List, Optional, Tuple
 from collections import Counter

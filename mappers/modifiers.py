@@ -7,8 +7,8 @@ from lxml.etree import ParserError
 from retrie.retrie import Blacklist
 
 from mappers.core_utils import split_paragraphs, split_words
-from core.constants import CONTENT, URL
-from core.factory_utils import factory_function
+from mappers.constants import CONTENT, URL
+from mappers.factory_utils import factory_function
 from bs4 import BeautifulSoup
 import random
 import copy

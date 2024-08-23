@@ -1,0 +1,8 @@
+boto3==1.24.8
+cloudpathlib[boto3]==0.10.0
+beautifulsoup4==4.11.1
+justext==3.0.0
+lxml==4.9.1
+jsonlines==1.2.0
+zstandard==0.15.2
+retrie

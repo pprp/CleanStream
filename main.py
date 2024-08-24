@@ -22,7 +22,7 @@ def apply_filters(record, filters):
             continue 
         print(filter_def, "&&")
         if 'func' not in filter_def:
-            raise KeyError(f"Missing 'func' key in filter definition: {filter_def}")
+            continue
         filter_func = filter_def.pop('func')
         args = filter_def  # Remaining items are arguments
         # Get the function from the modifiers module

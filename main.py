@@ -44,9 +44,9 @@ def apply_filters(record, filters):
         if isinstance(record, (list, tuple)):
             print('===', type(record))
             record = record[0]
-    
     return record
-        
+
+
 # Function to read, parse, and filter the JSONL file using the provided config
 def process_jsonl_file(filename, filters):
     filtered_records = []
@@ -58,7 +58,7 @@ def process_jsonl_file(filename, filters):
     return filtered_records
 
 # Specify the filenames
-jsonl_filename = './data/train-00000-of-00041.jsonl'
+jsonl_filename = './data/top_100.jsonl'
 config_filename = 'c4.yaml'
 
 # Load the configuration
@@ -71,7 +71,7 @@ filters = config[0]['steps']
 filtered_records = process_jsonl_file(jsonl_filename, filters)
 
 # save to json file
-SAVE_PATH='./data/saved_train-00000-of-00041.jsonl'
+SAVE_PATH='./data/saved_top_100.jsonl'
 
 def save_to_jsonl(data, path):
     with open(path, 'w') as file:
